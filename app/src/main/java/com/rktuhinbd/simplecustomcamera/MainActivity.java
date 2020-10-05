@@ -25,7 +25,6 @@ import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.Surface;
 import android.view.TextureView;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CAMERA_PERMISSION = 200;
     private boolean backCameraActivated = true;
-    ;
+
     private Handler mBackgroundHandler;
     private HandlerThread mBackgroundThread;
 
@@ -222,9 +221,6 @@ public class MainActivity extends AppCompatActivity {
                             backCameraActivated = true;
                         }
                     });
-
-
-                    // createCameraPreview();
                 }
             };
 
